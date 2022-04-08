@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+li {
+    width: calc((100% / 3) - 20px);
+    flex-grow: 1;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1024px;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+li figure {
+    margin-bottom: 20px;
+}
+
+li h4 {
+    margin-bottom: 15px;
+}
