@@ -25,10 +25,14 @@ require_once __DIR__ . '/class.php';
                     $director = $movie -> getDirector();
                     $length = $movie -> getLength();
                     $year = $movie -> getYear();
+                    $poster = $movie -> getPoster();
 
                     ?> 
 
                     <li>
+                        <figure>
+                            <img src="<?php echo $poster ?>">
+                        </figure>
                         <h4><?php echo $title ?></h4>
                         <div>
                             <p>Regista: <?php echo $director ?></p>
