@@ -19,6 +19,7 @@ require_once __DIR__ . '/class.php';
                 <?php 
                 
                 foreach($moviesCat as $movie ):
+
                     $title = $movie -> getTitle();
                     $genre = $movie -> getGenre();
                     $director = $movie -> getDirector();
@@ -26,14 +27,20 @@ require_once __DIR__ . '/class.php';
                     $year = $movie -> getYear();
 
                     ?> 
+
                     <li>
                         <h4><?php echo $title ?></h4>
+                        <div>
+                            <p>Regista: <?php echo $director ?></p>
+                            <p>Genere: <?php echo $genre ?></p>
+                            <p>Durata: <?php echo $length ?></p>
+                            <p>Anno: <?php echo $year ?></p>
+                        </div>
                     </li>
+
                     <?php
                 endforeach
-                
                 ?>
-
             </ol>
         </div>
     </main>
